@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+import RemoveCircleIcon from '@material-ui/icons/RemoveCircle';
 
 import useStyle from './styles';
 const Todo = () =>
@@ -6,7 +8,7 @@ const Todo = () =>
    const classes=useStyle();
     
   const [addit,setadd]=useState("");
-  const [items,setitems]=useState(['']);
+  const [items,setitems]=useState(['Add something']);
   const inputvalue = (event) =>
   {
     setadd(event.target.value);
@@ -32,23 +34,24 @@ const Todo = () =>
 <div className={classes.main_div}>
   <div className={classes.center_div}>
     <div className={classes.text}>
-    <h1 className={classes.heading}>TO DO LIST</h1>
+    <h1 style={{fontFamily:"Poppins"}} className={classes.heading}>TO DO LIST</h1>
    <br/>
-   <input type="text" placeholder="add item:" onChange={inputvalue} value={addit}></input>
-   <button onClick={clickclick}>+</button>
-
-   <ol>
+   <div className={classes.part}>
+   <input style={{height:'30px', padding:'0 0 0 0' ,position:'relative',bottom:'6px'}}type="text" placeholder="What's Next:" onChange={inputvalue} value={addit}></input>
+   <button onClick={clickclick}><AddCircleIcon></AddCircleIcon></button>
      
      {items.map( (itemvalue,index) => 
      {
      return (
-        <li>
-        <button onClick={deleteitem(index)}>*</button>{itemvalue}
-        </li>
+        <div className={classes.element}>
+        <button style={{marginRight:'8px'}} onClick={() =>deleteitem(index)}></button>{itemvalue}
+        </div>
      )
      
      })}
-   </ol>
+   </div>
+   
+  
     
     </div>
    
