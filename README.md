@@ -1,3 +1,10 @@
+# image"
+<img src="src/images/fulldashboard.png">
+
+## Packages used
+1)@material-ui
+2)chartjs 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
