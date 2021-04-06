@@ -11,9 +11,9 @@ export default makeStyles (() => ({
         width: '300px',
         height: '250px',
         border: '0px solid black',
-        backgroundColor:' #e8d5eb',
-        borderRadius:'5px',
-        boxShadow:'3px 5px'
+        backgroundColor:'',        
+        borderRadius:'15px',
+        boxShadow:"rgba(0,0,0,0.35)0px 5px 15px"
       },
       
     
@@ -27,16 +27,18 @@ export default makeStyles (() => ({
         margin:'5px',
         flexDirection:'column',
         borderRadius:'15px',
-        backgroundColor:'#cae6d8',
+        backgroundColor:'',
         border:'1px solid',
-        height:'70px'
+        height:'70px',
+        boxShadow:"2px 3px grey"
       },
       section:{
-       
+       position:"relative",
+       bottom:"10px",
       },
       image:{
        position:'relative',
        left:'190px',
-       bottom:'50px'
+       bottom:'50px',
       }
     }))

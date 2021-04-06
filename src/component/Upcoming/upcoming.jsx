@@ -18,7 +18,7 @@ const UpComing = () =>
             <CardContent className={Classes.cardContent}>
                 <div>
                 <Typography>
-                    <div style={{fontFamily:'Poppins',fontSize:'15px',fontWeight:'bold'}}> UPCOMING LESSONS</div> 
+                    <div style={{fontFamily:'Poppins',fontSize:'15px',fontWeight:'bold',backgroundColor:"#d49f9f",width:"200px",height:"20px",textAlign:'center',paddingTop:'10px',paddingBottom:'10px',borderRadius:'5px',boxShadow:"2px 2px 2px 2px grey"}}> UPCOMING LESSONS</div> 
                 </Typography>
                 </div>
                
@@ -31,7 +31,7 @@ const UpComing = () =>
                            <div>{cvalue.time}</div>
                            <div>{cvalue.subject}</div>
                         <div className={Classes.image}>
-                        <img  src={cvalue.image} height="50px" width="50px"></img>
+                        <img style={{borderRadius:"50%",}} src={cvalue.image} height="50px" width="50px"></img>
                         </div>
                         
                        </div>

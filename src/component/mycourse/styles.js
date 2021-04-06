@@ -7,13 +7,15 @@ export default makeStyles (() => ({
         top: '350px',
         left: '350px',
         width: '600px',
-        height: '150px',
+        height: '180px',
         border: '0 solid black',
-        backgroundColor:" #e8d5eb",
-        borderRadius:'5px',
-        boxShadow:'3px 5px'
+        backgroundColor:"white ",
+        borderRadius:'15px',
+        boxShadow:"rgba(0,0,0,0.35)0px 5px 15px"
       },
       main:{
+        position:"relative",
+        top:"30px",
         border:'2px solid black',
         borderRadius:'10px',
         width: '46%',
@@ -21,7 +23,7 @@ export default makeStyles (() => ({
          marginRight:'10px',
          marginLeft:'10px',
        display: 'inline-block',
-       backgroundColor:'#cae6d8'
+       backgroundColor:''
       },
       image:{
         position:'relative',

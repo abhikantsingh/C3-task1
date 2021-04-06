@@ -15,7 +15,7 @@ const LeadeBoars = () =>
         
    return(
      <div className={classes.root}>
-         <div style={{padding:"10px 0 30px 5px",display:'flex',textAlign:'center',justifyContent:'center',fontFamily:'Poppins',fontSize:"25px",fontWeight:'bold'}}>LEADERBOARD</div>
+         <div className={classes.topic}>LEADERBOARD</div>
          <div>
             { leadername.map((value) =>
             (

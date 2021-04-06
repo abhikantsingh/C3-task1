@@ -25,15 +25,34 @@ const NavBar = () =>
                <div className={classes.grow}></div>
                <div className={classes.button}>
                   <Typography className={classes.element}>
-                      <div className={classes.sub}><HomeIcon></HomeIcon>HOME</div>
-                      <div className={classes.sub}> <LineStyleIcon></LineStyleIcon>DASHBOARD </div>
-                      <div className={classes.sub}>
+                      <div className={classes.sub} style={{ display:'inline-flex',
+    VerticalAlign: 'text-bottom',
+    BoxSizing: 'inherit',
+    AlignItems: 'center'}}><HomeIcon></HomeIcon>HOME</div>
+                      <div className={classes.sub} style={{ 
+    VerticalAlign: 'text-bottom',
+    BoxSizing: 'inherit',
+    
+    AlignItems: 'center'}}> <LineStyleIcon></LineStyleIcon>DASHBOARD </div>
+                      <div className={classes.sub}
+                       style={{ 
+    VerticalAlign: 'text-bottom',
+    BoxSizing: 'inherit',
+    AlignItems: 'center'}}>
                       <ContactSupportRoundedIcon></ContactSupportRoundedIcon>
                       MY COURSE 
                       </div>
-                      <div className={classes.sub}><GestureRoundedIcon></GestureRoundedIcon>ACHIEVEMENTS</div>
+                      <div className={classes.sub}
+                      style={{ 
+                      VerticalAlign: 'text-bottom',
+                      BoxSizing: 'inherit',
+                      AlignItems: 'center'}}><GestureRoundedIcon></GestureRoundedIcon>ACHIEVEMENTS</div>
                 
-                      <div className={classes.sub}><ForumIcon></ForumIcon>FORUM</div>
+                      <div className={classes.sub}
+                      style={{ 
+                      VerticalAlign: 'text-bottom',
+                      BoxSizing: 'inherit',
+                      AlignItems: 'center'}}><ForumIcon></ForumIcon>FORUM</div>
                      
                   </Typography>
                </div>

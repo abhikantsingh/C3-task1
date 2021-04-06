@@ -34,7 +34,7 @@ const Todo = () =>
 <div className={classes.main_div}>
   <div className={classes.center_div}>
     <div className={classes.text}>
-    <h1 style={{fontFamily:"Poppins"}} className={classes.heading}>TO DO LIST</h1>
+    <h1 style={{fontFamily:'Poppins',fontSize:'15px',fontWeight:'bold',backgroundColor:"#d49f9f",width:"200px",height:"20px",textAlign:'center',paddingTop:'10px',paddingBottom:'10px',borderRadius:'5px',boxShadow:"2px 2px 2px 2px grey"}} className={classes.heading}>TO DO LIST</h1>
    <br/>
    <div className={classes.part}>
    <input style={{height:'30px', padding:'0 0 0 0' ,position:'relative',bottom:'6px'}}type="text" placeholder="What's Next:" onChange={inputvalue} value={addit}></input>
@@ -44,7 +44,7 @@ const Todo = () =>
      {
      return (
         <div className={classes.element}>
-        <button style={{marginRight:'8px'}} onClick={() =>deleteitem(index)}></button>{itemvalue}
+        <button style={{marginRight:'8px'}} onClick={() =>deleteitem(index)}><RemoveCircleIcon></RemoveCircleIcon></button>{itemvalue}
         </div>
      )
      

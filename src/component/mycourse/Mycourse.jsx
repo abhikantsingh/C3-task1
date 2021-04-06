@@ -11,7 +11,7 @@ const MyCourse = () =>
     const classes=useStyles();
     return(
          <div className={classes.root}>
-             <div style={{fontFamily:"Poppins",padding:'10px 0 10px 30px',fontWeight:'bold'}}>
+             <div style={{fontFamily:'Poppins',fontSize:'15px',fontWeight:'bold',backgroundColor:"#d49f9f",width:"200px",height:"20px",textAlign:'center',paddingTop:'10px',paddingBottom:'10px',borderRadius:'5px',boxShadow:"2px 2px 2px 2px grey",position:"relative",top:"10px",left:"20px"}}>
                  MY COURSE:
              </div>
              <div>
