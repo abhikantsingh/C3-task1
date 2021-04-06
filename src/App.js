@@ -5,7 +5,7 @@ import UpComing from "./component/Upcoming/upcoming";
 import Todo from "./component/Todo/todo.jsx";
 import Mycourse from "./component/mycourse/Mycourse";
 import LeaderBoard from "./component/Leaderboard/Leaderboard";
-//import Chart from "./component/graph/graph";
+import Chart from "./component/graph/graph";
 const App = () => {
   return (
     <div className="App">
@@ -14,7 +14,7 @@ const App = () => {
       <Todo></Todo>
       <Mycourse></Mycourse>
       <LeaderBoard></LeaderBoard>
-    
+    <Chart></Chart>
     </div>
   )
 }
