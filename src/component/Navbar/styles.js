@@ -25,7 +25,7 @@ export default makeStyles(() => ({
          padding:'10px',
          position:"relative",
       },
-      '&:sub:Hover':{
+      subHover:{
          backgroundColor:'yellow',
       }
 }));
